@@ -1,7 +1,7 @@
 {
   "name": "dynamic-css-loader",
   "version": "1.0.0",
-  "description": "",
+  "description": "Dynamic CSS loader useful for code splitting",
   "main": "dist/cjs.js",
   "scripts": {
     "test": "jest",

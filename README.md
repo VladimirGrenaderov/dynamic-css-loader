@@ -11,7 +11,7 @@
     <img width="200" height="200" vspace="" hspace="25" src="https://cdn.rawgit.com/webpack/media/e7485eb2/logo/icon-square-big.svg">
   </a>
   <h1>dynamic-css-loader</h1>
-  <p>DESCRIPTION</p>
+  <p>Dynamic CSS loader useful for code splitting</p>
 </div>
 
 <h2 align="center">Install</h2>
