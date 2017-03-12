@@ -58,6 +58,7 @@
     ]
   },
   "dependencies": {
-    "loader-utils": "^1.0.3"
+    "loader-utils": "^1.0.3",
+    "schema-utils": "github:webpack-contrib/schema-utils#28f0363"
   }
 }
