@@ -3,20 +3,10 @@ export default {
   additionalProperties: false,
   type: 'object',
   properties: {
-    useable: {
-      type: 'boolean',
-      default: false,
-      description: 'Expose use/unuse API',
-    },
     insertAt: {
       enum: ['top', 'bottom'],
-      default: 'top',
+      default: 'bottom',
       description: 'Where to insert the style element',
-    },
-    singleton: {
-      type: 'boolean',
-      default: false,
-      description: 'Reuse the same style element for all',
     },
     attrs: {
       type: 'object',
@@ -27,10 +17,6 @@ export default {
       enum: [false, 'anonymous', 'use-credentials'],
       default: false,
       description: 'Cross-origin loading',
-    },
-    cacheLinks: {
-      type: 'boolean',
-      description: 'Toggle node linking caching',
     },
   },
 };

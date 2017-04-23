@@ -4,8 +4,8 @@
   "description": "Dynamic CSS loader useful for code splitting",
   "main": "dist/cjs.js",
   "scripts": {
-    "test": "jest",
-    "test:watch": "jest --watch",
+    "test": "jest --config jest.config.json",
+    "test:watch": "jest --config jest.config.json --watch",
     "webpack-defaults": "webpack-defaults",
     "start": "yarn run serve:dev src",
     "build": "cross-env NODE_ENV=production babel -s true src -d dist --ignore 'src/**/*.test.js'",
@@ -30,7 +30,7 @@
     "babel-jest": "^19.0.0",
     "babel-polyfill": "^6.23.0",
     "babel-preset-env": "^1.2.1",
-    "cross-env": "^3.2.3",
+    "cross-env": "^4.0.0",
     "del-cli": "^0.2.1",
     "eslint": "^3.17.1",
     "eslint-config-webpack": "^1.1.0",
@@ -42,7 +42,7 @@
     "nsp": "^2.6.3",
     "pre-commit": "^1.2.2",
     "standard-version": "^4.0.0",
-    "webpack-defaults": "^0.2.1"
+    "webpack-defaults": "^0.4.5"
   },
   "engines": {
     "node": ">=4.3 <5.0.0 || >=5.10"
