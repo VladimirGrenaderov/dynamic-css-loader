@@ -16,7 +16,7 @@
   <p>Dynamic CSS loader useful for code splitting</p>
 </div>
 
-**dynamic-css-loader** has been designed to enable dynamic loading of CSS when code splits (i.e. `import()`) are used. It is meant to be used with **extract-text-webpack-plugin** and **extract-loader**. It writes CSS (no need for **file-loader**) and maintains a single reference to it based on the way you access code splits.
+**dynamic-css-loader** has been designed to enable dynamic loading of CSS when code splits (i.e. `import()`) are used. It is meant to be used with **extract-text-webpack-plugin**, **file-loader** and **extract-loader**.
 
 <h2 align="center">Install</h2>
 
@@ -39,6 +39,7 @@ npm install --save-dev dynamic-css-loader
     use: [ ... ],
     fallback: [
       'dynamic-css-loader',
+      'file-loader',
       'extract-loader',
     ],
   }),
@@ -54,7 +55,7 @@ npm install --save-dev dynamic-css-loader
 **bundle.js**
 
 ```js
-require("dynamic-css-loader!./file.EXT");
+require("dynamic-css-loader!file-loader!./file.ext");
 
 // Bundle code here...
 ```
